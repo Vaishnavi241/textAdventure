@@ -14,4 +14,14 @@ A simple retro-style text-based adventure game with a graphical interface made u
 * <i>Game over</i> if you encounter the monster
   
 * Styled GUI with a classic terminal-like look
-"""""""""""""""""""""""""'''''''''''''''''''''''''''''''''''''''''''"""""""""""""""""""""""""""""""""""''''''''''''''''''''''''''''''''''''''''""""""""""""""""""""""""""""""""""'''''''''''''''''''''''''''''"""""""""""
+"""""""""""""""""""""""""'''''''''''''''''''''''''''''''''''''''''''"""""""""""""""""""""""""""""""""""''''''''''''''''''''''''''''''''''''''''""""""""""""""""""""""""""""""""""'''''''''''''''''''''''''''''""""""""
+  <h3>To Play</h3>
+Type commands into the input box and press Submit
+
+Valid commands:
+
+go [direction] – move to another room (e.g., go north)
+
+get [item] – collect an item (e.g., get key)
+
+quit – exit the game
