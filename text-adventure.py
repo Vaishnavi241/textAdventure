@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Room definitions
 rooms = {
     'Hall': {
         'south': 'Kitchen',
@@ -25,7 +24,6 @@ rooms = {
 inventory = []
 current_room = 'Hall'
 
-# Update status display
 def show_status():
     status = f"You are in the {current_room}\n"
     status += f"Inventory: {', '.join(inventory) if inventory else 'Empty'}\n"
@@ -33,7 +31,6 @@ def show_status():
         status += f"You see a {rooms[current_room]['item']}\n"
     return status
 
-# Handle command input
 def process_command():
     global current_room
     command = entry.get().lower().split()
@@ -60,8 +57,6 @@ def process_command():
 
         elif action == 'quit':
             root.quit()
-
-    # Check win/lose conditions
     if "item" in rooms[current_room] and rooms[current_room]["item"] == "monster":
         messagebox.showerror("Game Over", "A monster got you! Game Over!")
         root.quit()
@@ -69,36 +64,20 @@ def process_command():
     if current_room == "Garden" and "key" in inventory and "potion" in inventory:
         messagebox.showinfo("Victory", "You escaped the house with the key and potion... YOU WIN!")
         root.quit()
-
-    # Update status
     status_label.config(text=show_status() + "\n" + output)
     entry.delete(0, tk.END)
-
-# Setup GUI
 root = tk.Tk()
 root.title("🧭 textAdventure")
 root.geometry("600x300")
 root.configure(bg="#1e1e2f")
-
-# Title label
 title = tk.Label(root, text="Text Adventure Game", font=("Courier", 18, "bold"), fg="lightgreen", bg="#1e1e2f")
 title.pack(pady=10)
-
-# Frame for main game area
 frame = tk.Frame(root, bg="#1e1e2f")
 frame.pack(pady=10, padx=10, fill="both", expand=True)
-
-# Status label
 status_label = tk.Label(frame, text=show_status(), justify="left", font=("Courier", 12), bg="#1e1e2f", fg="white", anchor="w")
 status_label.pack(fill="both", pady=5)
-
-# Entry box
 entry = tk.Entry(root, width=50, font=("Courier", 12))
 entry.pack(pady=5)
-
-# Submit button
 submit_btn = tk.Button(root, text="Submit Command", command=process_command, font=("Courier", 12), bg="#2d2d3c", fg="white")
 submit_btn.pack(pady=10)
-
-# Run the game loop
 root.mainloop()
