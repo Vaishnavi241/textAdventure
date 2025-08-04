@@ -15,10 +15,10 @@ A simple retro-style text-based adventure game with a graphical interface made u
   
 * Styled GUI with a classic terminal-like look
 """""""""""""""""""""""""'''''''''''''''''''''''''''''''''''''''''''"""""""""""""""""""""""""""""""""""''''''''''''''''''''''''''''''''''''''''""""""""""""""""""""""""""""""""""'''''''''''''''''''''''''''''""""""""
-  <h3>To Play</h3>
+  <h3>Instructions to play</h3>
 Type commands into the input box and press Submit
 
-Valid commands:
+<em>Valid commands:</em>
 
 go [direction] – move to another room (e.g., go north)
 
