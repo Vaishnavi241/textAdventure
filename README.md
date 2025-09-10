@@ -1,7 +1,8 @@
 # textAdventure
 A simple retro-style text-based adventure game with a graphical interface made using Python libraries. Navigate through rooms, collect items, and avoid the monster to win!
 <h4>Welcome page</h4>
-![text-adventure](https://github.com/user-attachments/assets/162cabc6-cc2f-4f97-9e6a-d78bbd19cc8a)
+<img width="544" height="434" alt="image" src="https://github.com/user-attachments/assets/8d1c69cb-619d-4d3e-9621-8d5dfb6fd37f" />
+
 <h4>Features</h4>
 * Room exploration
 
@@ -16,7 +17,7 @@ A simple retro-style text-based adventure game with a graphical interface made u
 * Styled GUI with a classic terminal-like look
 """""""""""""""""""""""""'''''''''''''''''''''''''''''''''''''''''''"""""""""""""""""""""""""""""""""""''''''''''''''''''''''''''''''''''''''''""""""""""""""""""""""""""""""""""'''''''''''''''''''''''''''''""""""""
   <h3>To Play</h3>
-Type commands into the input box and press Submit
+Type commands into the input box and press Submit to play
 
 Valid commands:
 
